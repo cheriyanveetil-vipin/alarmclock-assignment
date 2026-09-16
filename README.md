@@ -10,11 +10,15 @@ Python 3.9+, standard library only — no dependencies to install.
 ## Install
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -e .
 ```
 
-This installs an `alarmclock` command. Alternatively, run it directly with
-`python -m alarmclock`.
+This installs an `alarmclock` command inside the venv. Alternatively, skip
+the install and run it directly with `python -m alarmclock` (still inside
+the activated venv, or with any Python 3.9+ interpreter — it has no
+third-party dependencies).
 
 ## Usage
 
@@ -57,6 +61,7 @@ independent alarm sets).
 ## Tests
 
 ```bash
+source .venv/bin/activate
 pip install pytest
 pytest
 ```

@@ -52,8 +52,11 @@ When an alarm fires, `run` beeps and prompts:
 Press Enter to dismiss, or 's' + Enter to snooze 5 min:
 ```
 
-One-shot alarms (`once`) disable themselves after firing. Repeating alarms
-re-arm automatically for their next scheduled day.
+The beep keeps the watcher blocked on that prompt until you respond —
+dismiss (Enter) or snooze (`s` + Enter) is required to silence it and let
+`run` resume watching. Once dismissed, one-shot alarms (`once`) disable
+themselves, so you don't need to `alarmclock disable` them separately.
+Repeating alarms re-arm automatically for their next scheduled day.
 
 Alarms persist to `~/.alarmclock/alarms.json` (override with `--file PATH` or
 the `ALARMCLOCK_HOME` env var — useful for tests or running multiple

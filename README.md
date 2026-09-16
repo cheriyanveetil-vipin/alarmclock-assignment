@@ -13,6 +13,7 @@ Python 3.9+, standard library only — no dependencies to install.
 python3 -m venv .venv
 source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -e .
+pip install pytest           # only needed to run the test suite
 ```
 
 This installs an `alarmclock` command inside the venv. Alternatively, skip
@@ -62,7 +63,6 @@ independent alarm sets).
 
 ```bash
 source .venv/bin/activate
-pip install pytest
 pytest
 ```
 

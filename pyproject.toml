@@ -1,0 +1,18 @@
+[project]
+name = "alarmclock"
+version = "1.0.0"
+description = "A simple terminal alarm clock CLI"
+requires-python = ">=3.9"
+
+[project.scripts]
+alarmclock = "alarmclock.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["alarmclock*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -8,7 +8,8 @@ from pathlib import Path
 
 from .models import Alarm
 
-DEFAULT_PATH = Path(os.environ.get("ALARMCLOCK_HOME", Path.home() / ".alarmclock")) / "alarms.json"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_PATH = Path(os.environ.get("ALARMCLOCK_HOME", PROJECT_ROOT)) / "alarms.json"
 
 
 class Store:

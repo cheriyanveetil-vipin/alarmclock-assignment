@@ -58,9 +58,10 @@ dismiss (Enter) or snooze (`s` + Enter) is required to silence it and let
 themselves, so you don't need to `alarmclock disable` them separately.
 Repeating alarms re-arm automatically for their next scheduled day.
 
-Alarms persist to `~/.alarmclock/alarms.json` (override with `--file PATH` or
-the `ALARMCLOCK_HOME` env var — useful for tests or running multiple
-independent alarm sets).
+Alarms persist to `alarms.json` at the project root (override with
+`--file PATH` or the `ALARMCLOCK_HOME` env var — useful for tests or running
+multiple independent alarm sets). It's git-ignored since it's runtime data,
+not source.
 
 ## Tests
 

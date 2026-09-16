@@ -88,11 +88,3 @@ pytest
   short and stable across removals instead of growing forever.
 - **No web UI, no database, single dependency-free package** per the
   exercise's constraints.
-
-## What I'd add next with more time
-
-- Real audio playback (a WAV via a cross-platform sound library) instead of
-  the terminal bell.
-- A background/daemon mode (e.g. via `launchd`/`systemd` or a detached
-  process) instead of requiring a foreground terminal.
-- Time zone awareness for alarms set while traveling.

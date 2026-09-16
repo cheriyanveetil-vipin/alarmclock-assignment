@@ -3,6 +3,9 @@
 A terminal alarm clock. Set alarms, list them, and run a foreground watcher
 that beeps and prints an alert when one is due.
 
+See [DESIGN.md](DESIGN.md) for the requirements refinement, design
+decisions, and implementation plan behind this build.
+
 ## Requirements
 
 Python 3.9+, standard library only — no dependencies to install.
